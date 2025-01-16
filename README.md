@@ -1,0 +1,1 @@
+# s48_rock_paper_G
