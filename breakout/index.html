@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>2D Breakout Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Breakout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1 id="score">0</h1>
-<div class="grid"></div>
+    <div class="container">
+        <h1 id="score">Score: 0</h1>
+        <div class="grid"></div>
+    </div>
 
-<script src="index.js"></script>
+    <audio id="hitSound" src="hit.mp3"></audio>
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="loseSound" src="lose.mp3"></audio>
+
+    <script src="index.js"></script>
 </body>
 </html>

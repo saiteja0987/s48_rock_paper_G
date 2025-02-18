@@ -1,0 +1,75 @@
+/* Center everything */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Headings for choices and results */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Buttons styling */
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+/* Different colors for buttons */
+#rock {
+    background-color: #ff5733; /* Red */
+    color: white;
+}
+
+#paper {
+    background-color: #3498db; /* Blue */
+    color: white;
+}
+
+#scissors {
+    background-color: #2ecc71; /* Green */
+    color: white;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555;
+}
+
+/* Button click animation */
+button:active {
+    transform: scale(0.9);
+}
+
+/* Animating the result display */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#result {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff9800; /* Orange */
+    animation: fadeIn 0.5s ease-in-out;
+}

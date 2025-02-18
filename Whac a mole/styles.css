@@ -1,17 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
 .grid {
-	width: 606px;
-	height: 606px;
-	display: flex;
-	flex-wrap: wrap;
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .square {
-	height: 200px;
-	width: 200px;
-	border: solid black 1px;
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+    background-color: #ddd;
 }
 
 .mole {
-	background-image: url("mole.jpg");
-	background-size: cover;
+    background-image: url("mole.jpg");
+    background-size: cover;
+}
+
+@keyframes mole-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.mole {
+    background-image: url("mole.jpg");
+    background-size: cover;
+    animation: mole-pop 0.5s infinite ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }

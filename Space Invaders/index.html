@@ -2,12 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Invaders</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="results">0</h1>
-    <div class="grid"></div>
+
+    <h1>Space Invaders</h1>
+    <h2>Score: <span id="score">0</span></h2>
+    <h2 class="results">Press Start to Play</h2>
+
+    <div class="game-container">
+        <div class="grid"></div>
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+        </div>
+    </div>
+
+    <audio id="shoot-sound" src="shoot.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="game-over-sound" src="game-over.mp3"></audio>
+
     <script src="app.js"></script>
 </body>
 </html>

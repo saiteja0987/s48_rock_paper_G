@@ -1,29 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
 .grid {
-    position: absolute;
-    width: 560px;
-    height: 300px;
-    border: solid 1px black;
-    margin-top: 100px;
-  }
-  
-  .user {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: blueviolet;
-  }
-  
-  .block {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: blue;
-  }
-  
-  .ball {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0);
-  }
+  position: relative;
+  width: 560px;
+  height: 300px;
+  border: solid 2px white;
+  background-color: #222;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blueviolet;
+  border-radius: 5px;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
